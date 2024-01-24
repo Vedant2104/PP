@@ -1,0 +1,87 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_52683-59882.jpg?t=st=1706068400~exp=1706069000~hmac=ae37c76df371688e940448f2e3f615532a8f63ef0c0e209f4647016891257fc0");
+    background-size: cover;
+}
+h1{
+    text-align:center;
+    font-size:44px;
+    color:cornflowerblue;
+}
+.grid_container{
+    margin:auto;
+    padding: 40px;
+    display:grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(255, 248, 242);
+    border-radius: 30px;
+    text-align: center;
+    width:fit-content;
+    justify-content: center;
+}
+.item{
+    background-color: blanchedalmond;
+    border-radius:20px;
+    width: fit-content;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:30px;
+    flex-direction: column;
+    padding:20px;
+}
+#cir{
+    position: relative;
+    margin: auto;
+    width:154px;
+    height:154px;
+    border-radius:50%;
+    color:white;
+    border: 8px;
+    border-style: solid;
+    background-image: url("https://e7.pngegg.com/pngimages/186/549/png-clipart-user-computer-icons-sprite-sprite-blue-logo.png");
+    background-size: cover;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.514); 
+}
+
+.item1{
+    grid-row: 1/4;
+    grid-area: 1/1/4/1;
+    
+}
+#name{
+    
+    font-size:25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+#prof{
+    color:brown;
+    font-weight: 700;
+}
+
+#quote{
+    position:relative;
+
+}
+#data{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:brown;
+    display: flex;
+    flex-direction: column;
+    border-radius:10px;
+    padding: 20px;
+    gap:20px;
+    text-align: left;
+}
+.left{
+    font-weight: 900;
+    font-family:Impact;
+}
+.right{
+    color:rosybrown;
+}
