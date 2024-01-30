@@ -1,87 +1,407 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-body{
-    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_52683-59882.jpg?t=st=1706068400~exp=1706069000~hmac=ae37c76df371688e940448f2e3f615532a8f63ef0c0e209f4647016891257fc0");
-    background-size: cover;
-}
-h1{
-    text-align:center;
-    font-size:44px;
-    color:cornflowerblue;
-}
-.grid_container{
-    margin:auto;
-    padding: 40px;
-    display:grid;
-    gap: 20px;
-    grid-template-columns: auto auto auto;
-    background-color: rgb(255, 248, 242);
-    border-radius: 30px;
-    text-align: center;
-    width:fit-content;
-    justify-content: center;
-}
-.item{
-    background-color: blanchedalmond;
-    border-radius:20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:floralwhite;
+    }
+    body{
+        background-color: rgb(20, 22, 22);
+        background-image: url("https://i.pinimg.com/originals/dd/91/19/dd91191f0f0b96b132a3a5d43a980a53.jpg");
+        background-size: cover;
+        
+    }
+    h1{
+        text-align:center;
+        font-size:44px;
+        color:rgb(8, 26, 58);
+        text-shadow: 2px 2px 5px white;
+    }
+    .grid_container{
+        margin:auto;
+        padding: 25px;
+        display:grid;
+        gap: 25px;
+        grid-template-columns: auto 440px auto;
+        background-color: rgba(32, 20, 36, 0.848);
+        text-align: center;
+        width:fit-content;
+        justify-content: center;
+    }
+    .item{
+        background-color: rgba(5, 5, 5,0.88);
+        opacity: 90%;
+        width: fit-content;
+        color:aliceblue;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition-duration: 1.5s;
+        flex-direction: column;
+        padding:20px;
+    }
+    .item:hover{
+        background-color: rgb(18, 10, 26,0.88);
+        transform: scale(105%);
+    }
+    #cir{
+        position: relative;
+        margin-left:auto;
+        margin-right:auto;
+        width:164px;
+        height:164px;
+        border-radius:50%;
+        color:rgb(49, 43, 43);
+        border: 6px;
+        border-style: solid;
+        background-image: url("https://cdn-icons-png.flaticon.com/512/9159/9159758.png");
+        background-color:darkturquoise;
+        background-position: 0px 5px;
+        background-size: cover;
+        box-shadow: 5px 3px 5px rgba(127, 125, 125, 0.514); 
+    }
+    #cir:hover{
+        animation: rotate 0.5s 1;
+    }
+    
+    .item1{
+        gap:4vh;
+        grid-row: 1/4;
+        grid-area: 1/1/4/1;
+        
+    }
+    #name{
+        
+        font-size:2rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+    }
+    #prof{
+        color:rgb(111, 111, 111);
+        font-weight: 700;
+    }
+    
+    #quote{
+        position:relative;
+        font-family: cursive;
+    
+    }
+    #data{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:rgba(58, 64, 87, 0.508);
+        display: flex;
+        flex-direction: column;
+        
+        padding: 20px;
+        gap:20px;
+        text-align: left;
+    }
+    .left{
+        font-weight: 100;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .right{
+        color:rosybrown;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hed{
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: 900;
+      text-align: left;
+      color:aqua;
+    }
+    
+    li{
+        text-align: left;
+        
+    }
+    @keyframes rotate{
+        0%{
+            transform:rotateY(0deg);
+        }
+        50%{
+            transform:rotateY(180deg);
+        }
+        100%{
+            transform:rotateY(360deg);
+        }
+    }
+    @keyframes fill1{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:70%;
+        }
+    }
+    @keyframes fill2{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:45%;
+        }
+    }
+    @keyframes fill3{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:65%;
+        }
+    }
+    @keyframes fill4{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:30%;
+        }
+    }
+    @keyframes mov1{
+        0%{
+            left:0%;
+        }
+        100%{
+            left:60%;
+        }
+    }
+    @keyframes mov2{
+        0%{
+            left:0%;
+        }
+        100%{
+            left:55%;
+        }
+    }
+    @keyframes mov3{
+        0%{
+            left:0%;
+        }
+        100%{
+            left:85%;
+        }
+    }
+    @keyframes mov4{
+        0%{
+            left:0%;
+        }
+        100%{
+            left:75%
+        }
+    }
+    .bars{
+        align-self:center;
+        width:20rem;
+        height:10px;
+        background-color:rgba(129, 110, 110, 0.048) ;
+        
+    }
+    .Skill{
+        padding-top: 22px;
+        gap:12px;
+        justify-content: space-between;
+        display: flex;
+    }
+    .Skills{
+        text-align: left;
+        font-size: 16px;
+    }
+    .Progress{
+        background-color: rgb(238, 0, 0);
+        height:100%;
+        
+    }
+    .pc{
+        width:70%;
+        animation: fill1 1.5s 1 linear;
+    }
+    .pw{
+        width:45%;
+        animation: fill2 1.5s 1 linear;
+    }
+    .pcc{
+        width:65%;
+        animation: fill3 1.5s 1 linear;
+    }
+    .pf{
+        width:30%;
+        animation: fill4 1.5s 1 linear;
+    }
+    .item6{
+        
+        padding-right: 45%;
+    }
+    .item5{
+        padding-right:45%;
+    }
+    .item7{
+        padding-right:45%;
+    }
+    .item6:hover{
+        background-image: url("https://images.vexels.com/media/users/3/153149/isolated/preview/1dbe90ba2f24289a1668a0dbc8150e2e-gamepad-icono-de-trazo-de-color-by-vexels.png");
+        background-size: 60%;
+        background-position: 200px 25px;
+        background-repeat: no-repeat;
+    }
+    .item2:hover{
+        background-image: url("https://medsu.info/wp-content/uploads/iconfinder_school-08_3002449.png");
+        background-size: 70%;
+        background-position: 100px 15px;
+        background-repeat: no-repeat;
+
+    }
+    .item3:hover{
+        background-image: url("https://cdn-icons-png.flaticon.com/512/9346/9346113.png");
+        background-size: 33%;
+        background-position: 200px 120px;
+        background-repeat: no-repeat;
+
+    }
+    .item4:hover{
+        background-image: url("https://icons.veryicon.com/png/o/miscellaneous/linear/cpu-12.png");
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: 150px 90px;
+    }
+    .item5:hover{
+        background-image: url("https://www.freeiconspng.com/uploads/save-money-icon-png--32.png");
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: 150px 90px;
+    }
+    .item7:hover{
+        background-image: url("https://th.bing.com/th/id/R.534cf357a7e949084439daf3079d508e?rik=VVz%2bvjqAWU9vaw&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2fweakness-icon-71.png&ehk=MAdfUJD%2bBKUFThkLGU4aP0GZEXESAMYEslf6GCQuFIo%3d&risl=&pid=ImgRaw&r=0");
+        background-size:40%;
+        background-repeat: no-repeat;
+        background-position: 150px 90px;
+    }
+    .item1:hover{
+        background-image: url("https://i1.wp.com/portalenterprises.tech/wp-content/uploads/2019/12/Copy-writing-icon.png?fit=288%2C288&ssl=1");
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: 100px 440px;
+    }
+    .prac{
+        width:15px;
+        position: relative;
+        left:75%;
+        animation: mov4 1.5s 1 linear;
+    }
+    .anal{
+        width:15px;
+        position: relative;
+        left:85%;
+        animation: mov3 1.5s 1 linear;
+    }
+    .int{
+        width:15px;
+        position: relative;
+        left:55%;
+        animation: mov2 1.5s 1 linear;
+    }
+    .hw{
+        width:15px;
+        position: relative;
+        left:60%;
+        animation: mov1 1.5s 1 linear;
+    }
+    @media screen and (max-width:450px){
+        .grid_container{
+            grid-template-columns: 90%;
+        }
+        .bars{
+            width:185px;
+        }
+        .bars2{
+            width:150px;
+        }
+        .item5{
+            padding-right:10%;
+        }
+    }
+    @media screen and (max-width:850px)  and (min-width:450px){
+        .grid_container{
+            grid-template-columns: 1fr 1fr;
+        }
+        .item5{
+            padding-right:10%;
+        }
+    }
+    #edu2{
+        display:none;
+        text-align: center;
+    }
+   #cnt{
+    color:green;
+    background-color:rgb(33, 35, 28);
+    border-style:none;
     width: fit-content;
-    
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap:30px;
-    flex-direction: column;
-    padding:20px;
-}
-#cir{
+    height:2rem;
     position: relative;
-    margin: auto;
-    width:154px;
-    height:154px;
-    border-radius:50%;
-    color:white;
-    border: 8px;
-    border-style: solid;
-    background-image: url("https://e7.pngegg.com/pngimages/186/549/png-clipart-user-computer-icons-sprite-sprite-blue-logo.png");
-    background-size: cover;
-    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.514); 
-}
-
-.item1{
-    grid-row: 1/4;
-    grid-area: 1/1/4/1;
-    
-}
-#name{
-    
-    font-size:25px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 800;
-}
-#prof{
-    color:brown;
-    font-weight: 700;
-}
-
-#quote{
-    position:relative;
-
-}
-#data{
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:brown;
+    margin:auto;
+   }
+   #cnt:hover{
+    background-color:rgb(17, 18, 15);
+   }
+   #cnt-links{
+    display:none;
+    justify-content: space-between;
+   }
+   .logo{
+    width:2rem;
+   }
+   .logo:hover{
+    opacity: 50%;;
+   }
+   .content{
+    display:none;
+   }
+   #load{
     display: flex;
     flex-direction: column;
-    border-radius:10px;
-    padding: 20px;
-    gap:20px;
-    text-align: left;
-}
-.left{
-    font-weight: 900;
-    font-family:Impact;
-}
-.right{
-    color:rosybrown;
-}
+    align-items:center;
+    position: relative;
+    top:50vh;
+   }
+   #lbar{
+    position:relative;
+    height:9vh;
+    width:50vw;
+    background-color: rgba(42, 100, 100, 0.332);
+    border-style: solid;
+    border-color: rgb(61, 54, 80);
+    box-shadow: 2px 2px 5px rgb(112, 69, 69);
+   }
+   #lfill{
+    width:100%;
+    height: 100%;;
+    background-color: rgba(14, 9, 16, 0.836);
+    animation: fillbar 3s  1s 1;
+   }
+   #ls{
+    font-size: larger;
+    color: rgb(120, 63, 63);
+    font-size: 1.3rem;
+    animation: fill-load 1s infinite;
+   }
+   @keyframes fill-load{
+    0%{
+        color: rgb(184, 2, 2);
+    }
+    25%{
+        color:rgb(110, 67, 67)
+    }
+    50%{
+        color:rgb(40, 40, 105);
+    }
+    100%{
+        color:rgb(31, 31, 28);
+    }
+   }
+   @keyframes fillbar{
+        0%{
+            width:0%;
+        }
+        100%{
+            width:100%;
+        }
+   }
+   
