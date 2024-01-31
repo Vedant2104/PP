@@ -304,6 +304,9 @@
         animation: mov1 1.5s 1 linear;
     }
     @media screen and (max-width:450px){
+            .content{
+                    font-size:8vw;
+            }
         .grid_container{
             grid-template-columns: auto;
             justify-content: center;
