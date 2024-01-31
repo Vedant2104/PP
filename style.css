@@ -305,7 +305,7 @@
     }
     @media screen and (max-width:450px){
         .grid_container{
-            grid-template-columns: 1fr;
+            grid-template-columns: auto;
         }
         .bars{
             width:175px;
