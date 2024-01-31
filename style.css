@@ -306,12 +306,16 @@
     @media screen and (max-width:450px){
         .grid_container{
             grid-template-columns: auto;
+            justify-content: center;
         }
         .bars{
             width:180px;
         }
         .bars2{
             width:150px;
+        }
+        .item{
+            margin:auto;
         }
         .item5{
             padding-right:25%;
@@ -322,7 +326,7 @@
             grid-template-columns: 1fr 1fr;
         }
         .item5{
-            padding-right:10%;
+            padding-right:20%;
         }
     }
     #edu2{
