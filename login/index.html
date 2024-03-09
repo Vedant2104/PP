@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sliding Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="container">
+                <div class="forms-container">
+                  <div class="form-control signup-form">
+                    <form action="#">
+                      <h2>Signup</h2>
+                      <input type="text" placeholder="Username" required />
+                      <input type="email" placeholder="Email" required />
+                      <input type="password" placeholder="Password" required />
+                      <input type="password" placeholder="Confirm password" required />
+                      <button>Signup</button>
+                    </form>
+                    <span>or signup with</span>
+                    <div class="socials">
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-google-plus-g"></i>
+                      <i class="fab fa-linkedin-in"></i>
+                    </div>
+                  </div>
+                  <div class="form-control signin-form">
+                    <form action="#">
+                      <h2>Log in</h2>
+                      <input type="text" placeholder="Username" required />
+                      <input type="password" placeholder="Password" required />
+                      <button>Log in</button>
+                    </form>
+                    <span>or signin with</span>
+                    <div class="socials">
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-google-plus-g"></i>
+                      <i class="fab fa-linkedin-in"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="intros-container">
+                  <div class="intro-control signin-intro">
+                    <div class="intro-control__inner">
+                      <h2>Welcome back!</h2>
+                      <p>
+                        To keep connected with us please login with your personal info                      </p>
+                      <button id="signup-btn">No account yet? Signup.</button>
+                    </div>
+                  </div>
+                  <div class="intro-control signup-intro">
+                    <div class="intro-control__inner">
+                      <h2>Come join us!</h2>
+                      <p>
+                        Enter your personal details and start journey with us                      </p>
+                      <button id="signin-btn">Already have an account? Log in.</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <script src="script.js"></script>
+</body>
+</html>

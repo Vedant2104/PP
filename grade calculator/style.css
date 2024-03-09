@@ -1,0 +1,27 @@
+*{
+        text-align:center;
+        color:#252A34;  
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+        background-color: #08D9D6;
+        
+}
+div{    
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        position:relative;
+        margin:auto;
+        width: fit-content;
+        background-color: #ffe2e298;
+        border: 2px solid #F6F6F6;
+        padding:20px;
+}
+#but{
+        display: flex;
+        align-items: center;
+}
+#button{
+        margin:auto;
+}
